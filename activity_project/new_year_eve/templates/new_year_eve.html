@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--  -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>new_year_eve</title>
+	<link rel="stylesheet" href="/static/lib/swiper.min.css">
+	<link rel="stylesheet" href="/static/css/new_year_eve.css">
+	<script src="/static/lib/jquery.min.js"></script>
+	<script src="/static/lib/swiper.jquery.min.js"></script>
+	<script src="/static/lib/html2canvas.js"></script>
+	<script src="/static/lib/touch.min.js"></script>
+	<script src="/static/js/new_year_eve.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="outer">
+    <div class="header"><span class="font_dosis_400">Gululu拜年卡片生成器</span></div>
+    <div class="content">
+      <div class="bg_container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              
+            </div>
+            <div class="swiper-button-prev btn_checkout"></div>
+            <div class="swiper-button-next btn_checkout"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn_div">
+        <div class="btn_container">
+          <div class="btn btn_">
+            <input type="file" name="file" class="img_input" id="img_input">
+            <span class="btn_change font_dosis_200">更换照片</span>
+          </div>
+          <div class="btn btn_create">
+            <span class="a_save font_dosis_200">生成卡片</span>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="loading_div">
+  <div class="mask"></div>
+  <div class="text font_dosis_200">Loading...</div>
+</div>
+	<script>
+		var qiniuTK = '{{qn_tk}}';
+	</script>
+</body>
+</html>
